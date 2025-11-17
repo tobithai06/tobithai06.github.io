@@ -1,0 +1,487 @@
+/*
+Author: Tobi Thai
+Date: 11/16/2025
+File Name: styles1.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images 
+/* Base Styles (Mobile First) */
+body {
+    background-color: #173D4D;
+    font-family: "Merriweather", serif;
+    color: #fff;
+}
+
+/* Flexible images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style rule for header */
+header {
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Style for rules for navigation area */
+nav{
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.3em;
+    font-family: "Merriweather", serif;
+    border-top: 1px solid #000;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 0.75em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #000;
+}
+
+nav li a:hover {
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.2);
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #000;
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.tel-link {
+    background-color: #A9A9A9;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+#qna {
+    text-align: left;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: linear-gradient(to right, #636363, #000);
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+}
+
+#qna dt {
+    font-weight: bold;
+}
+
+#qna dd{
+    padding: 0.5% 1% 2% 0;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact .contact-email-link {
+    color: #FAB972;
+    text-decoration: none;
+}
+
+#form {
+    margin-top: 2%;
+    background-color: #173D4D;
+    padding: 2%;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #FAB972;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+/* Style rules for footer content */
+footer {
+    background-color: #173D4D;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+#lastModified {
+    font-size: 0.8em;
+    color: #fff;
+    margin-top: 0.5em;
+}
+
+
+/* Art Showcase Layout */
+#WeeklyArtShowcase {
+    margin: 2em auto;
+    text-align: center;
+    background-color: #000;
+    padding: 2%;
+}
+
+#WeeklyArtShowcase h2 {
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+#WeeklyArtShowcase div {
+    margin: 1em 0;
+}
+
+#WeeklyArtShowcase img.round {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1em;
+}
+
+#WeeklyArtShowcase p {
+    color: #fff;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+    
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        display: inline-block;
+        border: none;
+    }
+
+    nav a {
+        padding: 0.5em 1em;
+    }
+
+    #WeeklyArtShowcase div {
+        display: inline-block;
+        width: 30%;
+        margin: 1%;
+        vertical-align: top;
+    }
+
+    #WeeklyArtShowcase h3 {
+        font-size: 1.5em;
+    }
+
+    #GlobalArtShowcase div {
+        display: inline-block;
+        width: 22%;
+        margin: 1%;
+        vertical-align: top;
+    }
+
+    #GlobalArtShowcase h3 {
+        font-size: 1.5em;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */
+    .tel-num {
+        font-size: 1.25em;
+    }
+
+    #qna {
+        text-align: left;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        background: linear-gradient(to right, #636363, #000);
+        background-color: #f2f2f2;
+        padding: 1% 2%;
+    }
+
+    #qna dt {
+        font-weight: bold;
+    }
+
+    #qna dd{
+        padding: 0.5% 1% 2% 0;
+    }
+
+    .external-contact-us {
+    color: #FAB972;
+    }
+
+    /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Tablet Viewport: Animation */
+    .about-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.3);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 30px 45px;
+        border-radius: 35px;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        text-align: center;
+    }
+
+    .about-btn:hover {
+        transform: translate(-50%, -50%) scale(1.5);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .about-btn a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    @-webkit-keyframes text-animation {
+        0% { font-size: 1em; }
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+    }
+
+    @keyframes text-animation {
+        0% { font-size: 1em; }
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+    }
+
+    figcaption {
+        -webkit-animation-name: text-animation;
+        animation-name: text-animation;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+        -webkit-animation-duration: 6s;
+        animation-duration: 6s;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1025px) {
+    
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        width: 70%;
+        float: right;
+        margin: 3em 2em 0 0;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    /* Desktop Viewport: Style Rules for main content */
+    main {
+        clear: both;
+        text-align: left;
+        padding: 3%;
+    }
+
+    #WeeklyArtShowcase {
+        padding: 3%;
+    }
+
+    #WeeklyArtShowcase div {
+        width: 28%;
+        margin: 1%;
+    }
+
+    #WeeklyArtShowcase img {
+        max-height: 375px;
+    }
+
+    #GlobalArtShowcase {
+        padding: 3%;
+    }
+
+    #GlobalArtShowcase div {
+        display: inline-block;
+        width: 22%;
+        margin: 1%;
+        vertical-align: top;
+        text-align: center;
+    }
+
+    #GlobalArtShowcase img {
+        max-height: 350px;
+    }
+
+    #GlobalArtShowcase h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #GlobalArtShowcase h2 {
+        text-align: center;
+    }
+
+    .about-btn:hover {
+        transform: translate(-50%, -50%) scale(1.2);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    footer {
+        clear: both;
+    }
+
+    /* Desktop Viewport: Style rules for form elements */
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 3;
+    }
+
+}
+
+/* --- Mobile Viewport Pop-up for About Button --- */
+@media screen and (max-width: 629px) {
+    .about-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 30px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        text-align: center;
+        animation: popUp 0.6s ease-out;
+    }
+
+    .about-btn:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .about-btn a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+}

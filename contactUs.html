@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- This is a comment. Website Template By: Tobi Thai, 11/16/2025 -->
+<html lang="en">
+<head>
+    <title>Times Art - Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tobi Thai">
+    <meta name="description" content="Times Art is a digital art showcase museum, where artists from across the world can send in their own art to be digitally displayed in the art gallery.">
+    <link rel="stylesheet" href="css/styles1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/TimesArtLogoCopy.png" type="image/png"> 
+</head>
+<body onload="displayLastModified()">
+
+    <div id="container">
+        <!-- Created by Tobi Thai -->
+        <!-- Use the header area for the website name or logo -->
+        <header>
+            <a href="indexHP.html"><img src="images/TimesArtLogoCopy.png" alt="Times Art Logo"></a>
+        </header>
+
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="discussions.html">Discussions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+
+            <div id="contact">
+
+                <h2>Want to send your art? Have any questions? Contact us today.</h2>
+                <h4 class="mobile tel-link"><a href=“tel:1234567890”>Call us: (123) 456-7890</a></h4>
+                <h4 class="tablet-desktop tel-num">(123) 456-7890</h4>
+                <h4>Email us: <a href="mailto:tthai3@student.clayton.edu" class="contact-email-link">tthai3@student.clayton.edu</a></h4>
+                <h4>Visit us at: 2000 Clayton State Blvd, Morrow, GA 30260</h4>
+            
+            </div>
+
+            <div id="form">
+
+                <h2>Complete the form below for eligibility to send your art.</h2>
+
+                <form class="form-grid"> <!-- Start Form -->
+
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>How to send your Art</legend>
+
+                        <label for="imageUpload">Upload you Art:</label>
+                        <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required>
+
+                        <label for="aName">Artist's Name:</label>
+                        <input type="text" id="aName" name="aName" required>
+
+                        <label for="quoteD">Quote/Description</label>
+                        <textarea id="quoteD" name="quoteD" rows="5" cols="35"></textarea>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Referral Source</legend>
+                        <label for="reference">How did you find us?</label>
+                        <select name="reference" id="reference">
+                            <option value="ad">Advertisement</option>
+                            <option value="friend">Friend</option>
+                            <option value=“google”>Google</option>
+                            <option value=“social”>Social Media</option>
+                            <option value=“other”>Other</option>
+                        </select>
+
+                        <label for="questions"> Questions?</label>
+                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                        
+                    </fieldset>
+
+                    <input type="submit" id="submit" value ="Submit" class="btn">
+                    
+                </form>
+
+            </div>
+
+        </main>
+        
+            <div>
+            </div>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:tthai3@student.clayton.edu">tthai3@student.clayton.edu</a></p>
+            <p>Assignment 7 due on 11/16/2025 at 11:59 pm</p>
+            <div id="lastModified"></div>
+        </footer>
+
+    </div>
+
+    <script src="scripts/scripts1.js"></script>
+
+</body>
+</html>
