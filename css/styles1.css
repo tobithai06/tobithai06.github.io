@@ -1,6 +1,6 @@
 /*
 Author: Tobi Thai
-Date: 11/16/2025
+Date: 11/30/2025
 File Name: styles1.css
 */
 
@@ -142,6 +142,10 @@ main h2 {
 #contact .contact-email-link {
     color: #FAB972;
     text-decoration: none;
+}
+
+.external-contact-us {
+    color: #FAB972;
 }
 
 #form {
@@ -391,7 +395,7 @@ footer a {
     }
 
     #WeeklyArtShowcase {
-        padding: 3%;
+        padding: 1%;
     }
 
     #WeeklyArtShowcase div {
@@ -400,11 +404,11 @@ footer a {
     }
 
     #WeeklyArtShowcase img {
-        max-height: 375px;
+        max-height: 450px;
     }
 
     #GlobalArtShowcase {
-        padding: 3%;
+        padding: 1%;
     }
 
     #GlobalArtShowcase div {
@@ -416,7 +420,7 @@ footer a {
     }
 
     #GlobalArtShowcase img {
-        max-height: 350px;
+        max-height: 375px;
     }
 
     #GlobalArtShowcase h3 {
@@ -484,4 +488,97 @@ footer a {
         width: 100%;
         height: 100%;
     }
+}
+
+/* Move carousel arrows outward */
+.carousel-control-prev, .carousel-control-next {
+    width: 4%;              /* makes the clickable area slim */
+}
+
+.carousel-control-prev {
+    left: -45px;            /* push arrow OUTSIDE to the left */
+}
+
+.carousel-control-next {
+    right: -45px;           /* push arrow OUTSIDE to the right */
+}
+
+/* Make carousel art images smaller */
+.carousel-item img {
+    max-height: 560px;      /* adjust: 400px - 600px */
+    object-fit: contain;    /* prevents cropping */
+}
+
+/* ---------- Discussion Page Styles ---------- */
+.discussion-header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.discussion-box {
+    display: flex;
+    background-color: #173D4D;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 25px 0;
+    gap: 15px;
+}
+
+.discussion-image {
+    width: 16%;
+    min-width: 120px;
+}
+
+.discussion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #0f2a35; /* background if no image */
+}
+
+.discussion-text {
+    width: 70%;
+    color: white;
+}
+
+.discussion-text h3 {
+    margin-bottom: 8px;
+    font-size: 1.4em;
+}
+
+.discussion-text p {
+    margin: 4px 0;
+    font-size: 1em;
+}
+
+/* Stack vertically on small screens */
+@media screen and (max-width: 600px) {
+    .discussion-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .discussion-image,
+    .discussion-text {
+        width: 100%;
+    }
+}
+
+/* Highlight when hovered */
+.discussion-box {
+    display: flex;
+    background-color: #173D4D;
+    border: 2px solid #ffffff50;
+    padding: 15px;
+    margin: 25px 0;
+    gap: 15px;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discussion-box:hover {
+    border-color: #00d5ff;
+    box-shadow: 0 0 12px #00d5ff80;
 }

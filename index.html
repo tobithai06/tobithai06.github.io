@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<!-- This is a comment. Website Template By: Tobi Thai, 11/16/2025 -->
+<!-- This is a comment. Website Template By: Tobi Thai, 11/30/2025 -->
 <html lang="en">
 <head>
     <title>Times Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="utf-8">
     <meta name="author" content="Tobi Thai">
     <meta name="description" content="Times Art is a digital art showcase museum, where artists from across the world can send in their own art to be digitally displayed in the art gallery.">
@@ -11,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/TimesArtLogoCopy.png" type="image/png"> 
+    <link rel="icon" href="images/TimesArtLogo.png" type="image/png">
 </head>
 <body onload="displayLastModified()">
 
@@ -19,7 +21,7 @@
         <!-- Created by Tobi Thai -->
         <!-- Use the header area for the website name or logo -->
         <header>
-            <a href="indexHP.html"><img src="images/TimesArtLogoCopy.png" alt="Times Art Logo"></a>
+            <a href="index.html"><img src="images/TimesArtLogo.png" alt="Times Art Logo"></a>
         </header>
 
         <!-- Use the nav area to add hyperlinks to other pages within the website -->
@@ -40,50 +42,190 @@
                 <h2>Welcome to the Times Art art gallery!</h2>
                 <p>Times Art is a digital art showcase museum, where artists from across the world can send in their own art to be digitally displayed in the art gallery.</p>
                 <p>Our mission is to spread the love of everyones art piece in this digital museum gallery.</p>
-                <p>Take a look around and see art from amazing artists, enjoy!</p>
+                <p>Take a look around and see art from amazing artists, enjoy! Below is the Top 20 Weekly Art Showcase.</p>
 
             </section>
 
-            <section id="WeeklyArtShowcase">
-                <h2>Weekly Art Showcase</h2>
+        <h3 style="text-align: center;"><u>Top 20 Weekly Art Showcase</u></h3>
+            
+        <!-- Carousel -->
+            <div id="artCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
 
-                <div id="art1">
-                    <h3>Charcoal Flower</h3>
-                    <img src="images/MyArt01.png" alt="Times Art 01" class="round">
-                    <p>Artist: Tobi — A moody piece exploring form and shadow through the softness of charcoal.</p>
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3>#1</h3>
+                                <img src="images/MyArt01.png" class="d-block w-100" alt="Art 1">
+                                <h3 class="mt-2">Charcoal Flower</h3>
+                                <p>Artist: Tobi — A moody piece exploring form and shadow through the softness of charcoal.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#2</h3>
+                                <img src="images/MyArt02.png" class="d-block w-100" alt="Art 2">
+                                <h3 class="mt-2">Lost</h3>
+                                <p>Artist: notTobi — A minimalist piece that captures solitude through subtle contrast.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#3</h3>
+                                <img src="images/MyArt03.png" class="d-block w-100" alt="Art 3">
+                                <h3 class="mt-2">Bocchi vs The World</h3>
+                                <p>Artist: maybeTobi — A dynamic artwork blending humor and tension in vivid color.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3>#4</h3>
+                                <img src="images/MyArt04.jpeg" class="d-block w-100" alt="Art 4">
+                                <h3 class="mt-2">Akira</h3>
+                                <p>Artist: possiblyTobi — A hot rod drawing of a iconic scene known as the "Akira Drift".</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#5</h3>
+                                <img src="images/MyArt05.jpeg" class="d-block w-100" alt="Art 5">
+                                <h3 class="mt-2">Fragrant Flower</h3>
+                                <p>Artist: smellsLikeTobi — A beautiful scene of a happy moment.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#6</h3>
+                                <img src="images/MyArt06.jpeg" class="d-block w-100" alt="Art 6">
+                                <h3 class="mt-2">Wandering Vagabond</h3>
+                                <p>Artist: Musashi — "All truly strong people are kind."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3>#7</h3>
+                                <img src="images/MyArt07.jpeg" class="d-block w-100" alt="Art 7">
+                                <h3 class="mt-2">Goodbye</h3>
+                                <p>Artist: Yuji — Two friends saying goodbye to someone, but who is the someone?</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#8</h3>
+                                <img src="images/MyArt08.jpeg" class="d-block w-100" alt="Art 8">
+                                <h3 class="mt-2">Memories</h3>
+                                <p>Artist: Kenny — Two friends laughing at fond memories.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#9</h3>
+                                <img src="images/MyArt09.jpeg" class="d-block w-100" alt="Art 9">
+                                <h3 class="mt-2">Firepower</h3>
+                                <p>Artist: maybeTobi — A fight against literal firepower.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3>#10</h3>
+                                <img src="images/MyArt10.jpeg" class="d-block w-100" alt="Art 10">
+                                <h3 class="mt-2">Face</h3>
+                                <p>Artist: Tobi — With a face full of detail.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#11</h3>
+                                <img src="images/MyArt11.jpeg" class="d-block w-100" alt="Art 11">
+                                <h3 class="mt-2">Merry Christmas</h3>
+                                <p>Artist: Yuji — Enjoying the feeling of the winter season.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#12</h3>
+                                <img src="images/MyArt12.jpeg" class="d-block w-100" alt="Art 12">
+                                <h3 class="mt-2">Copy</h3>
+                                <p>Artist: Asa Mitaka — An evil copy emerges into the light.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3>#13</h3>
+                                <img src="images/MyArt13.jpeg" class="d-block w-100" alt="Art 13">
+                                <h3 class="mt-2">Angel</h3>
+                                <p>Artist: Hana — An angel that finally grew their wings at the last moment.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#14</h3>
+                                <img src="images/MyArt14.jpeg" class="d-block w-100" alt="Art 14">
+                                <h3 class="mt-2">Wild Flower</h3>
+                                <p>Artist: Strawberry — A women with a flower groing out her eye.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#15</h3>
+                                <img src="images/MyArt15.jpeg" class="d-block w-100" alt="Art 15">
+                                <h3 class="mt-2">Bandit's Secret</h3>
+                                <p>Artist: Chrollo — Can you steal dreams?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3>#16</h3>
+                                <img src="images/MyArt16.jpeg" class="d-block w-100" alt="Art 16">
+                                <h3 class="mt-2">Phoenix</h3>
+                                <p>Artist: Samura — The phoenix emerges from the onslaught.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#17</h3>
+                                <img src="images/MyArt17.jpeg" class="d-block w-100" alt="Art 17">
+                                <h3 class="mt-2">Vigor</h3>
+                                <p>Artist: Uruha — A man with relentless vigor refuses to back down.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#18</h3>
+                                <img src="images/MyArt18.jpeg" class="d-block w-100" alt="Art 18">
+                                <h3 class="mt-2">Beyond Journey's End</h3>
+                                <p>Artist: Frieren — Three friends adventuring to find purpose.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3>#19</h3>
+                                <img src="images/MyArt19.jpeg" class="d-block w-100" alt="Art 19">
+                                <h3 class="mt-2">Scarecrow</h3>
+                                <p>Artist: Junji Ito — A simple scarecrow, what more is their to it.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>#20</h3>
+                                <img src="images/MyArt20.jpeg" class="d-block w-100" alt="Art 20">
+                                <h3 class="mt-2">Monster Hunter</h3>
+                                <p>Artist: Velou — A boy becomes a man by defeating the monster.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div id="art2">
-                    <h3>Lost</h3>
-                    <img src="images/MyArt02.png" alt="Times Art 02" class="round">
-                    <p>Artist: notTobi — A minimalist piece that captures solitude through subtle contrast.</p>
-                </div>
-
-                <div id="art3">
-                    <h3>Bocchi vs. The World</h3>
-                    <img src="images/MyArt03.png" alt="Times Art 03" class="round">
-                    <p>Artist: maybeTobi — A dynamic artwork blending humor and tension in vivid color.</p>
-                </div>
-
-                <div id="art4">
-                    <h3>Akira</h3>
-                    <img src="images/MyArt04.jpeg" alt="Times Art 04" class="round">
-                    <p>Artist: possiblyTobi — A hot rod drawing of a iconic scene known as the "Akira Drift".</p>
-                </div>
-
-                <div id="art5">
-                    <h3>Fragrant Flower</h3>
-                    <img src="images/MyArt05.jpeg" alt="Times Art 05" class="round">
-                    <p>Artist: smellsLikeTobi — A beautiful scene of a happy moment.</p>
-                </div>
-
-                <div id="art6">
-                    <h3>Wandering Vagabond</h3>
-                    <img src="images/MyArt06.jpeg" alt="Times Art 06" class="round">
-                    <p>Artist: Musashi — "All truly strong people are kind."</p>
-                </div>
-
-            </section>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#artCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#artCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
         </main>
 
@@ -91,7 +233,7 @@
         <footer>
             <p>&copy; Copyright 2021. All Rights Reserved.</p>
             <p><a href="mailto:tthai3@student.clayton.edu">tthai3@student.clayton.edu</a></p>
-            <p>Assignment 7 due on 11/16/2025 at 11:59 pm</p>
+            <p>Assignment 7 due on 11/30/2025 at 11:59 pm</p>
             <div id="lastModified"></div>
         </footer>
 
